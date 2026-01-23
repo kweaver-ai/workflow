@@ -123,6 +123,30 @@
             }
         },
         {
+            "audit_type": "af-data-view-online",
+            "entry": "/anyfabric/dataOperationAudit.html",
+            "name": "af-data-view-online",
+            "category_belong": "af_workflow",
+            "tenant_id": "af_workflow",
+            "label": {
+                "zh-cn": "库表上线",
+                "zh-tw": "庫表上綫",
+                "en-us": "data view online"
+            }
+        },
+        {
+            "audit_type": "af-data-view-offline",
+            "entry": "/anyfabric/dataOperationAudit.html",
+            "name": "af-data-view-offline",
+            "category_belong": "af_workflow",
+            "tenant_id": "af_workflow",
+            "label": {
+                "zh-cn": "库表下线",
+                "zh-tw": "庫表下綫",
+                "en-us": "data view offline"
+            }
+        },
+        {
             "audit_type": "automation",
             "entry": "/flow-web/plugin.html",
             "name": "automation",
