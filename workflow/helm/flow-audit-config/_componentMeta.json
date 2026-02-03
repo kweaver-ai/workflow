@@ -86,19 +86,7 @@
             "name": "user-management"
         },
         {
-            "name": "efast"
-        },
-        {
-            "name": "eacp"
-        },
-        {
             "name": "hydra"
-        },
-        {
-            "name": "sharemgnt"
-        },
-        {
-            "name": "deploy-service"
         }
     ]
 }
