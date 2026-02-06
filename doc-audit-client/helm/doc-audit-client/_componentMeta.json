@@ -49,10 +49,7 @@
   },
   "dependence": [
     {
-      "name": "flow-audit-config"
-    },
-    {
-      "name": "flow-audit-core"
+      "name": "workflow"
     }
   ]
 }
