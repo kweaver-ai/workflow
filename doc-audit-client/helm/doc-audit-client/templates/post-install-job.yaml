@@ -30,6 +30,23 @@ spec:
             - >
               curl -H "Content-Type:application/json" -X PUT -d '
               [{
+                "name": "workflow",
+                "parent": "dataflow",
+                "orderIndex": 2,
+                "app": {
+                  "textZHCN": "工作流",
+                  "textZHTW": "工作流",
+                  "textENUS": "Workflow",
+                  "icon": "//ip:port/flow-web/workflow.svg"
+                },
+                "subapp": {
+                  "entry": "//ip:port/flow-web/workflow.html",
+                  "activeRule": "/",
+                  "baseRouter": ""
+                }
+              }]' http://studio-web-service:8877/api/workstation/v1/webapp &&
+              curl -H "Content-Type:application/json" -X PUT -d '
+              [{
                 "name": "doc-audit-client",
                 "parent": "plugins",
                 "orderIndex": 0,
