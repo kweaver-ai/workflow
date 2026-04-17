@@ -20,7 +20,7 @@ flow-audit-core
 {{- end -}} 
 
 {{- define "rds.realDatabase" -}}
-{{- printf "%s%s" .Values.depServices.rds.system_id .Values.depServices.rds.database -}}
+{{- printf "%s%s" .Values.depServices.rds.system_id "adp" -}}
 {{- end -}} 
 
 {{- define "redis.masterSlave.masterHost" -}}
