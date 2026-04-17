@@ -128,8 +128,8 @@ depServices:
 
 resources:
   requests:
-    cpu: 10m
-    memory: 100Mi
+    cpu: 200m
+    memory: 500Mi
   limits:
     cpu: 4
     memory: 8192Mi
