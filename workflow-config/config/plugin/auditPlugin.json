@@ -268,6 +268,17 @@
                 "zh-tw": "知識發佈",
                 "en-us": "knowledge publish"
             }
+        },
+        {
+            "audit_type": "data-view-auth-audit",
+            "entry": "",
+            "name": "data-view-auth-audit",
+            "category_belong": "af_workflow",
+            "label": {
+                "zh-cn": "数据视图权限审核",
+                "zh-tw": "數據視圖權限審核",
+                "en-us": "data view auth audit"
+            }
         }
     ],
     "auditor_plugin_info": [
