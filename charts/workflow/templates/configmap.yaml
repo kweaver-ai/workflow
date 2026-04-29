@@ -16,20 +16,20 @@ data:
   redis.standalone.host: {{ include "redis.standalone.host" . }}
   redis.standalone.port: {{ include "redis.standalone.port" . }}
   redis.standalone.username: {{ include "redis.standalone.username" . }}
-  redis.standalone.password: {{ include "redis.standalone.password" . }}
+  redis.standalone.password: {{ include "redis.standalone.password" .  | quote }}
   redis.masterSlave.masterHost: {{ include "redis.masterSlave.masterHost" . }}
   redis.masterSlave.masterPort: {{ include "redis.masterSlave.masterPort" . }}
   redis.masterSlave.slaveHost: {{ include "redis.masterSlave.slaveHost" . }}
   redis.masterSlave.slavePort: {{ include "redis.masterSlave.slavePort" . }}
   redis.masterSlave.username: {{ include "redis.masterSlave.username" . }}
-  redis.masterSlave.password: {{ include "redis.masterSlave.password" . }}
+  redis.masterSlave.password: {{ include "redis.masterSlave.password" .  | quote }}
   redis.sentinel.sentinelHost: {{ include "redis.sentinel.sentinelHost" . }}
   redis.sentinel.sentinelPort: {{ include "redis.sentinel.sentinelPort" . }}
   redis.sentinel.masterGroupName: {{ include "redis.sentinel.masterGroupName" . }}
   redis.sentinel.username: {{ include "redis.sentinel.username" . }}
-  redis.sentinel.password: {{ include "redis.sentinel.password" . }}
+  redis.sentinel.password: {{ include "redis.sentinel.password" .  | quote }}
   redis.sentinel.sentinelUsername: {{ include "redis.sentinel.sentinelUsername" . }}
-  redis.sentinel.sentinelPassword: {{ include "redis.sentinel.sentinelPassword" . }}
+  redis.sentinel.sentinelPassword: {{ include "redis.sentinel.sentinelPassword" .  | quote }}
   {{- end }}
   MQ_TYPE: {{ .Values.depServices.mq.mqType | quote }}
   MQ_HOST: {{ .Values.depServices.mq.mqHost | quote }}
