@@ -13,6 +13,7 @@ import Router from 'vue-router'
 import routes from './router'
 import { initRoutes } from '@/router/index'
 import { getLang, setToken } from '@/utils/auth'
+import { setTenantId } from '@/utils/config'
 import loadDirective from './utils/load-directive.js'
 import titleDirective from './utils/title-directive.js'
 import preventReClick from './utils/prevent-re-click.js'
@@ -130,7 +131,7 @@ function setUpparameters (context) {
     store.dispatch('app/setTimestamp',new Date())
 
     // 设置租户ID和全局token
-    store.dispatch('user/initTenantId')
+    setTenantId(microWidgetProps?.userInfo?.id)
     setToken(microWidgetProps?.token?.getToken?.access_token)
 
     // 设置国际化语言

@@ -6,8 +6,6 @@
 </template>
 
 <script>
-import { getUserInfo } from '@/api/efast'
-import { setTenantId } from '@/utils/config'
 export default {
   name: 'index',
   data () {
@@ -37,7 +35,7 @@ export default {
     }
   },
   mounted () {
-    this.initTenantId()
+    this.loader()
   },
   methods: {
     loader () {
@@ -54,12 +52,6 @@ export default {
       default:
         this.dashboard = () => import('../process-center/index.vue')
       }
-    },
-    initTenantId () {
-      getUserInfo().then((res) => {
-        setTenantId(res.userid)
-        this.loader()
-      }).catch(() => { })
     }
   }
 }
